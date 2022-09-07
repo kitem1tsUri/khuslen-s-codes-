@@ -1,0 +1,42 @@
+body { 
+    padding: 0;
+    margin: 0;
+}
+.tom { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+}
+#ulaan { 
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+#tsenher {
+    height: 100vh;
+    width: 960px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+}
+.button { 
+    margin: 10vh;
+    background-color: red;
+    border-color: white;
+    width: 10vw;
+    height: 10vh;
+    font-size: 8vh;
+}
+.buton { 
+    margin: 10vh;
+    background-color: blue;
+    border-color: white ;
+    width: 10vw;
+    height: 10vh;
+    font-size: 8vh;
+}

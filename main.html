@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="tom">
+        <div id="ulaan" style="width: 1080px;"> 
+            <button class="button" onclick="button()">dar2</button>
+
+        </div>
+        <div id="tsenher" style="width: 1080px;">
+            <button class="buton" onclick="button1()">dar2</button>
+
+
+        </div>
+    </div>
+
+</body>
+<script>
+    const button = () => {
+        console.log( document.getElementById("ulaan").style.width )
+        document.getElementById("ulaan").style.width = 
+        Number(document.getElementById("ulaan").style.width.split("px")[0])     +
+        50 +   "px" 
+
+    }
+
+
+  
+    const button1 = () => { 
+        console.log( document.getElementById("tsenher").style.width )
+        document.getElementById("tsenher").style.width = 
+        Number(document.getElementById("tsenher").style.width.split("px")[0])     +
+        50 + "px"
+        }
+</script>
+</html>
