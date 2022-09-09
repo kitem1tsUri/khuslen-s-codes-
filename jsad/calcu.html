@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./calculator.css" />
   </head>
-  <body onkeydown="result()">
+  <body onclick="result()">
     <div class="border">
       <div id="result">
         <div id="inputNumber">0</div>
@@ -32,8 +32,8 @@
           <div class="orangee">-</div>
         </div>
         <div class="row-4">
-          <div class="dark" class="dark1">1</div>
-          <div class="dark" class="dark2">2</div>
+          <div class="dark" class="dark1" onclick="tooAwah(1)" >1</div>
+          <div class="dark" class="dark2" onclick="tooAwah(2)">2</div>
           <div class="dark" class="dark3">3</div>
           <div class="orangee">+</div>
         </div>
@@ -46,7 +46,12 @@
     </div>
   </body>
   <script>
-
+      let input = document.getElementById('inputNumber')
+    const tooAwah = (too) => {
+        input.innerText = too
+    }
+     const result = () => {
+        document.addEventListener("keydown", (e) => { console})}
   </script>
  
-</html>
+</html> 
