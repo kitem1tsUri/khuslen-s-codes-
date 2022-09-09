@@ -7,16 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./main.css">
 </head>
-<body>
+<body onkeydown="clickKey()">
     <div class="tom">
         <div id="ulaan" style="width: 1080px;"> 
             <button class="button" onclick="button()">dar2</button>
 
         </div>
         <div id="tsenher" style="width: 1080px;">
-            <button class="buton" onclick="button1()">dar2</button>
-
-
+            <button class="buton"  onclick="button1()">dar2</button>
         </div>
     </div>
 
@@ -29,14 +27,19 @@
         50 +   "px" 
 
     }
-
-
-  
     const button1 = () => { 
         console.log( document.getElementById("tsenher").style.width )
         document.getElementById("tsenher").style.width = 
         Number(document.getElementById("tsenher").style.width.split("px")[0])     +
         50 + "px"
         }
+    const clickKey = () => {
+        document.addEventListener("keydown" , (e) => {
+        console.log(e.key)  })
+    }
+    if ( clickKey(a) ){
+        console.log('alertaaa')
+    }
+
 </script>
 </html>
