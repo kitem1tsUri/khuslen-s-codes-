@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <input id="too1" type="number">
+    <input id="too2" type="number">
+    <div id="equals" onclick="button()">=</div>
+    <p id="equal"> </p>
+</body>
+<script>
+    const button = () => { 
+        let haha = 0 ;
+        haha= Number(document.getElementById("too1").value) *    Number(document.getElementById("too2").value)
+        console.log(haha)
+    }
+</script>
+</html>
