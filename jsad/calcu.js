@@ -39,7 +39,8 @@ const surugtoo = () => {
  
 }
 const tseg = () => { 
-  // input.innerHTML += '.' ;
-  if ( input.innerHTML.includes(".") ) {} else { input.innerHTML += '.' } ;
+  // input.innerHTML += '.' ;\
+  if (input.innerHTML == 0) { input.innerHTML = 0} 
+  if ( input.innerHTML.includes(".") ) {} else { input.innerHTML += '.' }  ;
 
 }
