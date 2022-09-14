@@ -17,7 +17,7 @@ let willIGetNewPhone = new Promise((resolve, reject) => {
 
 let askMom = () => { 
     return willIGetNewPhone
-    .then((resolve) => { 
+    .then((resolve) => {        
         console.log(resolve); 
 
     })

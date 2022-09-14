@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./calculator.css" />
-  </head>
-  <body onclick="result()">
-    <div class="border">
-      <div id="result">
-        <div id="inputNumber"></div>
-      </div>
-      <div id="numbers">
-        <div class="row-1">
-          <div class="light" onclick="AllClear()">AC</div>
-          <div class="light">+/-</div>
-          <div class="light">%</div>
-          <div class="orangee" onclick="nemeh('/')" >÷</div>
-        </div>
-        <div class="row-2">
-          <div class="dark" class="dark7" onclick="tooAwah(7)">7</div>
-          <div class="dark" class="dark8" onclick="tooAwah(8)">8</div>
-          <div class="dark" class="dark9" onclick="tooAwah(9)">9</div>
-          <div class="orangee" onclick="nemeh('*')" >*</div>
-        </div>
-        <div class="row-3">
-          <div class="dark" class="dark4" onclick="tooAwah(4)">4</div>
-          <div class="dark" class="dark5" onclick="tooAwah(5)">5</div>
-          <div class="dark" class="dark6" onclick="tooAwah(6)">6</div>
-          <div class="orangee" onclick="nemeh('-')" >-</div>
-        </div>
-        <div class="row-4">
-          <div class="dark" class="dark1" onclick="tooAwah(1)" >1</div>
-          <div class="dark" class="d`````1`1ark2" onclick="tooAwah(2)">2</div>
-          <div class="dark" class="dark3" onclick="tooAwah(3)">3</div>
-          <div class="orangee" onclick="nemeh('+')">+</div>
-        </div>
-      </div>
-      <div class="row-5">
-        <div id="zero">0</div>
-        <div class="dark">.</div>
-        <div class="orangee">=</div>
-      </div>
-    </div>
-  </body>
-  <script>
-      let a 
-      let b 
-      let input = document.getElementById('inputNumber')
-      const AllClear = () => { 
-        input.innerText = ""
-      }
-    const tooAwah = (too) => {
-        input.innerText += too
-        
-    }
-    
-    
-     const result = () => {
-        document.addEventListener("keydown", (e) => { console})}
-     const nemeh = (temdeg) =>  { 
-      let a = input.innerText 
-      input.innerText = temdeg
-        console.log(temdeg)
-     }
- 
-  
 
-     
-  </script>
- 
-</html> 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./calculator.css" />
+</head>
+
+<body onclick="result()">
+  <div class="border">
+    <div id="result">
+      <div id="inputNumber"></div>  
+    </div>
+    <div id="numbers">
+      <div class="row-1">
+        <div class="light" onclick="AllClear()">AC</div>
+        <div class="light" onclick="surugtoo()">+/-</div>
+        <div class="light" onclick="huvi()" >%</div>
+        <div class="orangee" onclick="temdeg('/')">÷</div>
+      </div>
+      <div class="row-2">
+        <div class="dark" class="dark7" onclick="tooAwah(7)">7</div>
+        <div class="dark" class="dark8" onclick="tooAwah(8)">8</div>
+        <div class="dark" class="dark9" onclick="tooAwah(9)">9</div>
+        <div class="orangee" onclick="temdeg('*')">*</div>
+      </div>
+      <div class="row-3">
+        <div class="dark" class="dark4" onclick="tooAwah(4)">4</div>
+        <div class="dark" class="dark5" onclick="tooAwah(5)">5</div>
+        <div class="dark" class="dark6" onclick="tooAwah(6)">6</div>
+        <div class="orangee" onclick="temdeg('-')">-</div>
+      </div>
+      <div class="row-4">
+        <div class="dark" class="dark1" onclick="tooAwah(1)">1</div>
+        <div class="dark" class="d`````1`1ark2" onclick="tooAwah(2)">2</div>
+        <div class="dark" class="dark3" onclick="tooAwah(3)">3</div>
+        <div class="orangee" onclick="temdeg('+')">+</div>
+      </div>
+    </div> 
+    <div class="row-5">
+      <div id="zero">0</div>
+      <div class="dark" onclick="tseg()">.</div>
+      <div class="orangee" onclick="tentsuu()">=</div>
+    </div>
+  </div>
+</body>
+<script src="./calcu.js">
+
+
+
+</script>
+
+</html>
