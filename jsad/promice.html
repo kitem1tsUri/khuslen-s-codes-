@@ -7,13 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div onclick="asuu()"> hi</div>
+    <div id="asu" onclick="asuu()"> hi</div>
 </body>
-<script>
-  const asuu = () => {
-    const response = await fetch("ttps://www.randomuser.me/api/?results=50");
-  let data = await response.json();
-  console.log(data);
-  }
+<script src="./promice.js">
 </script>
 </html>
